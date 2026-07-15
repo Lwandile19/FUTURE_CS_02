@@ -1,0 +1,1822 @@
+Delivered-To: augustlionn1108@gmail.com
+Received: by 2002:a05:651c:10b4:b0:39c:9e29:625d with SMTP id k20csp226230ljn;
+        Fri, 10 Jul 2026 23:15:38 -0700 (PDT)
+X-Received: by 2002:a05:6214:e68:b0:8ee:756a:f1d1 with SMTP id 6a1803df08f44-903ffc62015mr26050306d6.27.1783750537964;
+        Fri, 10 Jul 2026 23:15:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1783750537; cv=none;
+        d=google.com; s=arc-20260327;
+        b=KHRWmXzCUObpT537LeznhWbfCFt/noTJWKBlHK2nwOZlk7XBsVY085qFfAs7Dg1oNK
+         NdBcLSkJFVgLsXA6yj0kF2T6MVKrLOxpdjM99CGgeOtY8ualX6k8Nhm6p8HN9ETmVae9
+         OyfRfmk2i5BwXQ8a8Y+f+WqvqrJQVJNUIqSE4Li/U/qYcvEM855jJ0+llFqoHx1agw5O
+         lBgayxfLfAlVetpP/GE+lZC2IkL9XQTaTGVi1EmxRx+yudSovPOmwbm+4Hmce/YKEaC+
+         u1pux3/i1Oo7uWOhHlqbsZea+rdiQiIeX0BWBaRFbuH5ysAVeP89Vpiz8yWBRdiabcRU
+         GWSw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=message-id:o:feedback-id:list-unsubscribe-post:list-unsubscribe
+         :reply-to:to:from:subject:mime-version:date:sender:dkim-signature
+         :dkim-signature:dkim-signature;
+        bh=EG/947dbz2da3Z3h0rmPXcUMHesB05Zn2jHmqzjD3as=;
+        fh=2nGMCXuOgqDR/LfpchVZ62c+z+9Pecbds+sK7r6YtX4=;
+        b=FlFXSf5tuJ9oKm8mGCwYtcdOHyjgDpICLjrGnkIacUClCT667ToGNGJo+T+j4+4aFx
+         +Sh8vD0DNAsyQLPbAgGH7usD7aembHSiFEQy4WytjWkTUgSnOCw/syKOq269VSpx83Bz
+         CymlS79qQ9tmPUqslEjRyYwBY/JR1vGUYMf+S0N3h/ymXq1VnwTOFTCxtFQOE4XXmjcf
+         6uiDUeuQdGTblS7pCSsr0qIytiN8XriepsC8LtyO9Dl5Lq6SSI1hIt36gwA8M0kzHx/T
+         ECC0zKP9iK3PRzNieOUuBOS3xExl7xsioTKQpe30H8kOvy2GxsHgCVphkskPafq3CBdU
+         W8rg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@dkim3.omnisend.email header.s=omni1 header.b=Xv3U0aIK;
+       dkim=pass header.i=@f.la.soundest.email header.s=mailo header.b=G9Amyq7I;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=Fucj4u5v;
+       spf=pass (google.com: domain of bounce+fbbc52.7d017-augustlionn1108=gmail.com@f.la.soundest.email designates 143.55.230.171 as permitted sender) smtp.mailfrom="bounce+fbbc52.7d017-augustlionn1108=gmail.com@f.la.soundest.email";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=soundest.email
+Return-Path: <bounce+fbbc52.7d017-augustlionn1108=gmail.com@f.la.soundest.email>
+Received: from v5171.v5d1da871.use4.send.mailgun.net (v5171.v5d1da871.use4.send.mailgun.net. [143.55.230.171])
+        by mx.google.com with UTF8SMTPS id 6a1803df08f44-8ffd9463bd7si86203456d6.436.2026.07.10.23.15.37
+        for <augustlionn1108@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 10 Jul 2026 23:15:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce+fbbc52.7d017-augustlionn1108=gmail.com@f.la.soundest.email designates 143.55.230.171 as permitted sender) client-ip=143.55.230.171;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@dkim3.omnisend.email header.s=omni1 header.b=Xv3U0aIK;
+       dkim=pass header.i=@f.la.soundest.email header.s=mailo header.b=G9Amyq7I;
+       dkim=pass header.i=@mailgun.org header.s=mg header.b=Fucj4u5v;
+       spf=pass (google.com: domain of bounce+fbbc52.7d017-augustlionn1108=gmail.com@f.la.soundest.email designates 143.55.230.171 as permitted sender) smtp.mailfrom="bounce+fbbc52.7d017-augustlionn1108=gmail.com@f.la.soundest.email";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=soundest.email
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=dkim3.omnisend.email; q=dns/txt; s=omni1; t=1783750537; x=1783757737;
+ h=Message-Id: List-Unsubscribe-Post: List-Unsubscribe: Reply-To: To: To: From: From: Subject: Subject: Content-Type: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=EG/947dbz2da3Z3h0rmPXcUMHesB05Zn2jHmqzjD3as=;
+ b=Xv3U0aIK6izWrSoXqBGAi9cCxUa9gHYS5mTKvsz1rVg5xKiIrXi51U+zLLyXxLD4zpfylfSvSZfd4e46FwvmVYqGWBUhLhBCK3/uefjwdXTHvbwAOJqJ5WlRnIkQQds8Sy/zvdwuprflG+3F95aHmUUkWq3j4TKC5j9sLTxZS9Lh0WQcP1Ajmr9DqHgMIEs090X5G9dvhYKznaHM+LoLuYb4E2DHWrxkk0CytJDbhXqzd+IKAyvHLb3ZzZaj40Dp8Oi7p5ec1EBoHjg+6q0gnxVS2IFrJwAb2dSOHBJMWV82tXzPc27bsQ+HxuDCu+4Fse9sN78ghiWCUUTiEOWtug==
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=f.la.soundest.email; q=dns/txt; s=mailo; t=1783750537; x=1783757737;
+ h=Message-Id: List-Unsubscribe-Post: List-Unsubscribe: Reply-To: To: To: From: From: Subject: Subject: Content-Type: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=EG/947dbz2da3Z3h0rmPXcUMHesB05Zn2jHmqzjD3as=;
+ b=G9Amyq7IeTL5KtGKKbU8BTe+uWGweD0JszBN++cPXhYDDMl+mrvV9WbgsQvLpdRZEQJL7s01KtAV1zJ0Y1riNyZbo/exKw0ro5qQxwN9vjRMLqxnSBGJrXqUZ+s7o2bK5lg46d+v83t/soKxwTYzLjcHDOdaop5hn8NPuLei46c=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=mailgun.org; q=dns/txt; s=mg; t=1783750537; x=1783757737;
+ h=Message-Id: List-Unsubscribe-Post: List-Unsubscribe: Reply-To: To: To: From: From: Subject: Subject: Content-Type: Mime-Version: Date: Sender: Sender: X-Feedback-Id;
+ bh=EG/947dbz2da3Z3h0rmPXcUMHesB05Zn2jHmqzjD3as=;
+ b=Fucj4u5vQ8chjvvUuiTjr3OxmffoHlaWUQSoRLuSSex4jo+UNWTNHl5qjuz1ggBul2rhIloBL/I1oiu8PpIIzXDSKN1Q12BjDUYJkLjuXro0XRfFEYBkVHlcY2ytahsVgAAZsaU4wUa0phw8GpaCWSVqkCAlZPyLt7VzY00JRME=
+X-Mailgun-Sid: WyIxNTdmNCIsImF1Z3VzdGxpb25uMTEwOEBnbWFpbC5jb20iLCI3ZDAxNyJd
+X-Feedback-Id: postmaster@f.la.soundest.email::54744e0af3b9c464d6310965:mailgun
+Received: by f02e593d77bf6ae27d2544ec2be04286af0642ea1f2141662ee283f6095b1703 with HTTP
+ id 6a51df87f33a2431316f677c; Sat, 11 Jul 2026 06:15:33 GMT
+X-Mailgun-Sending-Ip-Pool-Name: AS3
+X-Mailgun-Sending-Ip-Pool: 6655a2c69f43bfa346fa7d86
+X-Mailgun-Sending-Ip: 143.55.230.171
+X-Mailgun-Batch-Id: 6a51df85b51b138bf3ecbbec
+Sender: communications=5d2d808c8653ed3ed5358e58.soundest.email@f.la.soundest.email
+Date: Sat, 11 Jul 2026 06:15:33 +0000
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="da36834e822445967da04f28ee5df8b147d87b0d4de6f05877c7d1289e85"
+Subject: Catch us at Festival of Motoring
+From: Exclusive Brands Online
+ <communications@5d2d808c8653ed3ed5358e58.soundest.email>
+To: augustlionn1108@gmail.com
+X-Mailgun-Secondary-Dkim: dkim3.omnisend.email,omni1
+X-Mailgun-Track: false
+Reply-To: Exclusive Brands Online <sales@exclusivebrandsonline.co.za>
+List-Unsubscribe: <https://nmr.soundestlink.com/contactsPreferences/v2/unsubscribe/?b=5d2d808c8653ed3ed5358e58&c=5e1702fdab6171537e329fac&payload=ny_zeDNYThcRjXGJSDfw-akEo4ycZ-NAAHc0lz_0NKnbE7wKCXSYxflrN7SkugbSFaL0apWOUhmcSAtGQ61sgWsgYHPgF43s7irTYsHOAUiTFQ-bzzoUwDaYBxyeyhZlQB3K&headerUnsub=true>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-Id: 6a4e122a037509534c3ed422:5d2d808c8653ed3ed5358e58:campaign:omnisend
+O:secondary-Dkim: dkim3.omnisend.email,omni1
+X-Abuse-Reports-To: abuse@omnisend.com
+X-Mailgun-Variables: {"brandID": "5d2d808c8653ed3ed5358e58", "contactID":
+ "5e1702fdab6171537e329fac", "progressID": "6a4e1411037509534c3ed43b"}
+Message-Id: <20260711061533.595b9608e8530516@f.la.soundest.email>
+
+--da36834e822445967da04f28ee5df8b147d87b0d4de6f05877c7d1289e85
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Meet the team and experience our ride-on cars for yourself!
+
+This email was sent to you as HTML-only. To view it, please visit:=20
+https://nmr.soundestlink.com/ce/v/5e1702fdab6171537e329fac/6a4e141103750953=
+4c3ed43b?signature=3D554ede87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc=
+821835f773
+
+**************************
+
+Make sure you keep getting our latest offers and add communications@5d2d808=
+c8653ed3ed5358e58.soundest.email to your address book.
+
+Unsubscribe=20
+https://nmr.soundestlink.com/contactsPreferences/v2/unsubscribe/?b=3D5d2d80=
+8c8653ed3ed5358e58&c=3D5e1702fdab6171537e329fac&payload=3Dny_zeDNYThcRjXGJS=
+Dfw-akEo4ycZ-NAAHc0lz_0NKnbE7wKCXSYxflrN7SkugbSFaL0apWOUhmcSAtGQ61sgWsgYHPg=
+F43s7irTYsHOAUiTFQ-bzzoUwDaYBxyeyhZlQB3K
+
+Visit site
+http://www.exclusivebrandsonline.co.za
+
+=C2=96
+
+--da36834e822445967da04f28ee5df8b147d87b0d4de6f05877c7d1289e85
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head><!-- Used for outlook versions from 9 and greater -->
+<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPer=
+Inch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
+<![endif]-->
+<title>Catch us at Festival of Motoring</title>
+<meta content=3D"text/html; charset=3Dutf-8" http-equiv=3D"Content-Type"/>
+<meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewport"=
+/>
+<meta content=3D"telephone=3Dno" name=3D"format-detection"/>
+<link rel=3D"icon" href=3D"data:,">
+<style type=3D"text/css">
+html,body{width:100%!important;height:100%!important;margin:0 auto!importan=
+t;padding:0!important;-webkit-font-smoothing:antialiased;-webkit-text-size-=
+adjust:none;-ms-text-size-adjust:none;}body,table,td,a{-webkit-text-size-ad=
+just:100%;-ms-text-size-adjust:100%;}table{border-collapse:collapse;}table,=
+td{mso-table-lspace:0pt;mso-table-rspace:0pt;}th{font-weight:300;}img{-ms-i=
+nterpolation-mode:bicubic;}a[x-apple-data-detectors]{text-decoration:none!i=
+mportant;font-size:
+inherit!important;font-family:inherit!important;font-weight:inherit!importa=
+nt;line-height:inherit!important;color:inherit;}a:link,span.MsoHyperlink{te=
+xt-decoration:none;color:inherit;}u+#body a{text-decoration:none;font-size:=
+inherit;font-family:inherit;font-weight:inherit;line-height:inherit;color:i=
+nherit;}.appleFooterLinks a{text-decoration:none;color:inherit;}.desktop-wr=
+apper{display:table-cell;}.default-margin p{margin:0!important;}.centered-b=
+lock{display:block;margin:0 auto!important;}
+=2Emobile{display:none!important;}.side=
+-by-side{width:50%;max-width:50%;}.pro=
+duct-description-table th{mso-line-height-rule:exactly}.no-margin{margin:0;=
+}.margin-top{margin:4px 0 0 0;}p{word-spacing:normal;}
+@media screen and (max-width:600px){body{min-width:1px!important;}.desktop{=
+display:none!important;}.mobile{display:table!important;}.mobile-body-conta=
+iner{min-width:1px!important;}.mobile-container{width:100%!important;displa=
+y:table!important;height:auto!important;}.mobile-image{width:100%!important=
+;height:auto!important;}.mobile-bounded-image{max-width:100%!important;widt=
+h:auto!important;height:auto!important;}.mobile-image-stacked{max-width:100=
+%!important;width:auto!important;}
+=2Emobile-table{width:100%!important;}.=
+padding-left{padding-left:12px!importa=
+nt;}.padding-right{padding-right:12px!important;}.padding-top{padding-top:1=
+2px!important;}.padding-bottom{padding-bottom:12px!important;}.mobile-hidde=
+n{display:none!important;}.placeholder-image-block-table-cell{height:150px!=
+important;}/* STARTS Order confirmation */ .order-product-table-responsive-=
+cell{display:block!important;width:100%;}.order-product-image-responsive-el=
+ement{width:80px!important;height:auto;}
+=2Eplaceholder-image-block-table-cell.o=
+rder-product-image-responsive-element{=
+height:80px!important;}/* ENDS Order confirmation */ /* STARTS Order billin=
+g & shipping */ .order-billing-and-shipping-responsive-cell{display:table-r=
+ow!important;}/* ENDS Order billing & shipping */ .desktop-wrapper{display:=
+inline-block!important;} }
+@media screen and (max-width:480px){.stack-column{display:block!important;w=
+idth:100%!important;min-width:100%!important;direction:ltr!important;paddin=
+g:12px 0px!important;box-sizing:border-box;} }
+</style>
+</head>
+<body id=3D"body"
+style=3D"padding:0px;margin:0px"><p
+style=3D"max-height:0;font-size:0;line-height:0;margin:0;overflow:hidden;">=
+ Meet the team and experience our ride-on cars for yourself! </p><div
+style=3D"display:none;width:0px;height:0px;max-height:0px;overflow:hidden;"=
+> &#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&=
+#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#84=
+7;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&=
+nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbs=
+p;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&=
+#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#84=
+7;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&=
+nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbs=
+p;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&=
+#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#84=
+7;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&=
+nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbs=
+p;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&=
+#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#84=
+7;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&=
+nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbs=
+p;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&=
+#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#84=
+7;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&=
+nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbs=
+p;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&=
+#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#84=
+7;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&=
+nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbsp;&#847;&nbs=
+p;
+&shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &sh=
+y; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; =
+&shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &sh=
+y; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; =
+&shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &sh=
+y; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; =
+&shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy;
+&shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &sh=
+y; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; =
+&shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &sh=
+y; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; =
+&shy; &shy; &shy; &shy; &shy; </div><p
+style=3D"max-height:0;font-size:0;line-height:0;margin:0;overflow:hidden;">=
+ <img alt=3D"" border=3D"0" src=3D"https://nmr.soundestlink.com/ce/o/5e1702=
+fdab6171537e329fac/6a4e1411037509534c3ed43b?signature=3D554ede87057ea4c4d08=
+ffb4872a7b3494f851a0f76ea9207b77edc821835f773" width=3D"1" height=3D"1"/></=
+p>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" heig=
+ht=3D"100%"
+style=3D"background-color:#E3E5E8;" class=3D"mobile-body-container"><tr><td=
+>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"
+style=3D"min-width:290px"><tr><td>
+<table width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"center"
+style=3D"width:600px;margin:0px auto;background-color:#FFFFFF;" class=3D"mo=
+bile-container"><tr><td>
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td>
+<table id=3D"623d8dd831ed6b0d1b577ac5" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td background=3D""
+style=3D"padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:=
+0px;background-color:#FFFFFF;background-position:unset;background-repeat:no=
+-repeat;background-size:cover;">
+<table id=3D"623d8dd831ed6b0d1b577ac6" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;"><tr><td id=3D"623d8dd831ed6b0d1b577ac7" class=3D"mobi=
+le-container"
+style=3D"width:600px;vertical-align:top;">
+<table id=3D"627a39fa58221f6ab61fc7e9" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"600" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"627a39fa5=
+8221f6ab61fc7e9" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f452d?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"576" height=3D"418"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/6a4e13227ecb00c4e53b739d"
+style=3D"max-width:576px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:57=
+6px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"699da651cdac64d502cdbf03" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td class=3D"padding-left padding-right" background=3D""
+style=3D"padding-bottom:2px;padding-left:24px;padding-right:24px;padding-to=
+p:2px;background-position:unset;background-repeat:no-repeat;background-size=
+:cover;">
+<table id=3D"6a4e13e6299e8426a6efd994" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;height:100%;"><tr><td id=3D"6a4e13e6299e8426a6efd995" c=
+lass=3D"mobile-container" valign=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e136c299e8426a6efd744" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e1388299e8426a6efd79b" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13882=
+99e8426a6efd79b" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f452e?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"Kid=
+s Electric Ride On Car iGlide=C2=AE AMG Mercedes G63"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/KidselectricrideonBmwx7WhiteExclusiveBrandsonlinecopy3.png?v=
+=3D1691663957"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e1388299e8426a6efd7a7" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R4,899.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e1388299e8426a6efd7a8" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R6,299.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e1388299e8426a6efd7b2" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e1388299e8426a6efd7b2=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f452f?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd996" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e1388299e8426a6efd75f" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e1388299e8426a6efd7b3" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13882=
+99e8426a6efd7b3" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4530?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"Kid=
+s Electric Ride On Car iGlide=C2=AE Jeep Rubi M"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/KidselectricrideonBmwx7WhiteExclusiveBrandsonlinecopy10.png?=
+v=3D1691667342"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e1388299e8426a6efd7bf" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R3,049.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e1388299e8426a6efd7c0" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R4,200.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e1388299e8426a6efd7ca" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e1388299e8426a6efd7ca=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4531?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd997" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e1388299e8426a6efd77a" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e1388299e8426a6efd7cb" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13882=
+99e8426a6efd7cb" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4532?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"Kid=
+s Electric Ride On Car iGlide=C2=AE Jeep Large 4X4"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/jeeplwhite4x4_1_176d985d-1589-4219-8610-fc0081c8beca.png?v=
+=3D1691666221"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e1388299e8426a6efd7d7" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R4,899.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e1388299e8426a6efd7d8" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R6,700.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e1388299e8426a6efd7e2" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e1388299e8426a6efd7e2=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4533?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"6a4e13e6299e8426a6efd998" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;height:100%;"><tr><td id=3D"6a4e13e6299e8426a6efd999" c=
+lass=3D"mobile-container" valign=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13ce299e8426a6efd7f3" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13ce299e8426a6efd8a1" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13ce2=
+99e8426a6efd8a1" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4534?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"iGl=
+ide=C2=AE V7 5.5&#34; Folding Electric Scooter"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/products/Blank600x600120wscooterblue.png?v=3D1663926926"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13ce299e8426a6efd8ad" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R3,099.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13ce299e8426a6efd8ae" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R5,000.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13ce299e8426a6efd8b8" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13ce299e8426a6efd8b8=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4535?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd99a" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13ce299e8426a6efd80e" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13ce299e8426a6efd8b9" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13ce2=
+99e8426a6efd8b9" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4536?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"iGl=
+ide=C2=AE V6 8.5&#34; Multi Terrain Folding Electric Scooter"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/products/iglide-v6-10-folding-electric-scooter-white-iglide-366133=
+24407042.png?v=3D1684499881"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13ce299e8426a6efd8c5" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R7,099.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13ce299e8426a6efd8c6" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R8,500.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13ce299e8426a6efd8d0" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13ce299e8426a6efd8d0=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4537?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd99b" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13ce299e8426a6efd829" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13ce299e8426a6efd8d1" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13ce2=
+99e8426a6efd8d1" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4538?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"iGl=
+ide=C2=AE V6 8.5&#34; Multi Terrain Folding Electric Scooter X-Off Road"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/iglide8.5offroadX_2.png?v=3D1766151061"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13ce299e8426a6efd8dd" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R9,999.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13ce299e8426a6efd8de" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R12,500.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13ce299e8426a6efd8e8" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13ce299e8426a6efd8e8=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4539?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"6a4e13e6299e8426a6efd99c" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;height:100%;"><tr><td id=3D"6a4e13e6299e8426a6efd99d" c=
+lass=3D"mobile-container" valign=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13ce299e8426a6efd844" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13ce299e8426a6efd8e9" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a
+target=3D"_blank" data-link-id=3D"6a4e13ce299e8426a6efd8e9" href=3D"https:/=
+/vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411037509534c3ed43b/=
+6a51df6c1f7431b3312f453a?signature=3D554ede87057ea4c4d08ffb4872a7b3494f851a=
+0f76ea9207b77edc821835f773"><img alt=3D"Hoverboard iGlide=C2=AE 8.5&#34; Bl=
+uetooth Off Road APP Enabled Camouflage"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/Blank600x600copy133_1_e6e8a053-3e64-4995-b63f-00f8aa83341b.p=
+ng?v=3D1711983601"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13ce299e8426a6efd8f5" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R4,299.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13ce299e8426a6efd8f6" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R6,500.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13ce299e8426a6efd900" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13ce299e8426a6efd900=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f453b?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd99e" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13ce299e8426a6efd85f" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13ce299e8426a6efd901" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a
+target=3D"_blank" data-link-id=3D"6a4e13ce299e8426a6efd901" href=3D"https:/=
+/vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411037509534c3ed43b/=
+6a51df6c1f7431b3312f453c?signature=3D554ede87057ea4c4d08ffb4872a7b3494f851a=
+0f76ea9207b77edc821835f773"><img alt=3D"Hoverboard iGlide=C2=AE 8.5&#34; Bl=
+uetooth Off Road APP Enabled Carbon Fibre"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"126"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/products/hoverboard-i-glide-v4-8-5-bluetooth-off-carbon-fibre-igli=
+de-22606496628914.jpg?v=3D1658591048"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13ce299e8426a6efd90d" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R4,299.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13ce299e8426a6efd90e" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R6,500.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13ce299e8426a6efd918" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13ce299e8426a6efd918=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f453d?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd99f" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13ce299e8426a6efd87a" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13ce299e8426a6efd919" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a
+target=3D"_blank" data-link-id=3D"6a4e13ce299e8426a6efd919" href=3D"https:/=
+/vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411037509534c3ed43b/=
+6a51df6c1f7431b3312f453e?signature=3D554ede87057ea4c4d08ffb4872a7b3494f851a=
+0f76ea9207b77edc821835f773"><img alt=3D"Hoverboard iGlide=C2=AE 8.5&#34; Bl=
+uetooth Off Road Black Lightning"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"135"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/products/hoverboard-i-glide-v4-8-5-bluetooth-off-road-black-lightn=
+ing-iglide-22606524547250.jpg?v=3D1658591035"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13ce299e8426a6efd925" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R4,099.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13ce299e8426a6efd926" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R6,200.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13ce299e8426a6efd930" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13ce299e8426a6efd930=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f453f?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"6a4e13e6299e8426a6efd9a0" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;height:100%;"><tr><td id=3D"6a4e13e6299e8426a6efd9a1" c=
+lass=3D"mobile-container" valign=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13e6299e8426a6efd943" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13e6299e8426a6efd9a4" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13e62=
+99e8426a6efd9a4" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4540?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"iGl=
+ide=C2=AE Eazy Fold Electric Mobility Scooter"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/foldable_iglide_mobility_electric_scooter_ride_on.png?v=3D17=
+68222326"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13e6299e8426a6efd9b0" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R18,999.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13e6299e8426a6efd9b1" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R30,000.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13e6299e8426a6efd9bb" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13e6299e8426a6efd9bb=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4541?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd9a2" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13e6299e8426a6efd95e" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13e6299e8426a6efd9bc" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13e62=
+99e8426a6efd9bc" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4542?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"IGl=
+ide=C2=AE GO Mobility Scooter"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/iglide_cart_copy_4.png?v=3D1736935540"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13e6299e8426a6efd9c8" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R17,999.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13e6299e8426a6efd9c9" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R25,000.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13e6299e8426a6efd9d3" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13e6299e8426a6efd9d3=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4543?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td><td id=3D"6a4e13e6299e8426a6efd9a3" class=3D"mobile-container" valign=
+=3D"top" height=3D"100%"
+style=3D"width:184px;height:100%;font-size:0px;word-break:break-word;">
+<table id=3D"6a4e13e6299e8426a6efd979" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%" height=3D"100%"
+style=3D"table-layout:fixed;overflow-wrap:anywhere;word-wrap:anywhere;heigh=
+t:100%;"><tr><td valign=3D"top">
+<table id=3D"6a4e13e6299e8426a6efd9d4" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"184" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6a4e13e62=
+99e8426a6efd9d4" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4544?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D"IGl=
+ide=C2=AE Glide Master Mobility Trike"
+                                 class=3D"mobile-image mobile-image-stacked=
+ centered-block"
+                                    width=3D"160" height=3D"160"
+                                 border=3D"0"
+                                 src=3D"https://cdn.shopify.com/s/files/1/1=
+414/8064/files/iglide-mobility-glide-master-trike-electric.png?v=3D17498137=
+45"
+style=3D"max-width:160px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:16=
+0px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td valign=3D"top">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tr>=
+<td
+style=3D"">
+<table cellpadding=3D"0" border=3D"0" align=3D"center"><tr><td align=3D"cen=
+ter">
+<table id=3D"6a4e13e6299e8426a6efd9e0" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:12px;paddin=
+g-right:0px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;font-weight:700;">R16,999.00</p>
+</td></tr></table>
+</td><td height=3D"1" width=3D"8">
+</td><td align=3D"center">
+<table id=3D"6a4e13e6299e8426a6efd9e1" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#000000;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding-bottom:12px;padding-left:0px;padding=
+-right:12px;padding-top:12px;" bgcolor=3D"" class=3D"mobile-table"><p
+style=3D"margin:0px;text-decoration:line-through;">R25,000.00</p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr><tr><td height=3D"100%"
+style=3D"height:100%;font-size:0;line-height:0;">&nbsp;
+</td></tr><tr><td valign=3D"bottom">
+<table id=3D"6a4e13e6299e8426a6efd9eb" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:8p=
+x;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"6a4e13e6299e8426a6efd9eb=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4545?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop n=
+ow </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"693c0d085b75641c27610351" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td class=3D"padding-left padding-right padding-top padding-=
+bottom" background=3D""
+style=3D"padding-bottom:24px;padding-left:24px;padding-right:24px;padding-t=
+op:24px;background-position:unset;background-repeat:no-repeat;background-si=
+ze:cover;">
+<table id=3D"693c0d085b75641c27610352" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;"><tr><td id=3D"693c0d085b75641c27610353"
+style=3D"width:276px;vertical-align:top;">
+<table id=3D"693c0d085b75641c27610359" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"276" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding-bottom:12px;padding-left:12px;padding-right:12px;padding-t=
+op:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"252" height=3D"315"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/693bea3fc37cb65d8614e59b"
+style=3D"max-width:252px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:25=
+2px;">
+</td></tr></table>
+</td></tr></table>
+</td><td id=3D"693c0d085b75641c27610355"
+style=3D"width:276px;vertical-align:top;">
+<table id=3D"693c0d085b75641c2761035b" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"252" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"252" height=3D"63"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/693c0d2ac37cb65d8614eb91"
+style=3D"max-width:252px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:25=
+2px;">
+</td></tr></table>
+</td></tr></table>
+<table id=3D"693c0d085b75641c2761035c" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"252" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><img alt=3D""
+                                 class=3D"mobile-image"
+                                    width=3D"227" height=3D"227"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/693c0d585bbae9c2a56a5a4c"
+style=3D"max-width:227px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:22=
+7px;">
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"62ac8e27961a697a5c8ffa6e" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td class=3D"padding-left padding-right" background=3D""
+style=3D"padding-bottom:0px;padding-left:24px;padding-right:24px;padding-to=
+p:0px;background-color:#FFFFFF;background-position:unset;background-repeat:=
+no-repeat;background-size:cover;">
+<table id=3D"62ac8e27961a697a5c8ffa6f" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;"><tr><td id=3D"62ac8e27961a697a5c8ffa70" class=3D"mobi=
+le-container"
+style=3D"width:552px;vertical-align:top;">
+<table id=3D"631362d50d13eb10a872b711" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"table-layout:fixed;"><tbody><tr><td align=3D"center" class=3D"mobi=
+le-table"
+style=3D"padding:12px;" valign=3D"top">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"
+style=3D"background-color:#0076BC;border:0px solid #FFFFFF;border-radius:18=
+px;border-collapse:separate;"><tbody><tr>
+<!--[if !mso]><!--><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;">
+<!--<![endif]-->
+<!--[if mso]><td align=3D"center" valign=3D"middle"
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;font-wei=
+ght:bold;padding-bottom:10px;padding-left:16px;padding-right:16px;padding-t=
+op:10px;">
+<![endif]--> <a target=3D"_blank"  data-link-id=3D"631362d50d13eb10a872b711=
+" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411=
+037509534c3ed43b/6a51df6c1f7431b3312f4546?signature=3D554ede87057ea4c4d08ff=
+b4872a7b3494f851a0f76ea9207b77edc821835f773"
+style=3D"text-decoration:none;padding-bottom:10px;padding-left:16px;padding=
+-right:16px;padding-top:10px;display:inline-block;color:#FFFFFF;font-family=
+:Arial,sans-serif;font-size:12px;font-weight:bold;line-height:1.2;"> Shop M=
+ore Here </a>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"692de8f22248c0507404430e" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td class=3D"padding-left padding-right" background=3D""
+style=3D"padding-bottom:0px;padding-left:24px;padding-right:24px;padding-to=
+p:0px;vertical-align:middle;background-position:unset;background-repeat:no-=
+repeat;background-size:cover;">
+<table id=3D"692de8f22248c0507404430f" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;"><tr><td id=3D"692de8f22248c05074044310"
+style=3D"width:138px;vertical-align:middle;">
+<table id=3D"692de8f22248c0507404431d" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"114" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"114" height=3D"64"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/692dea9b5625429668e11817"
+style=3D"max-width:114px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:11=
+4px;">
+</td></tr></table>
+</td></tr></table>
+</td><td id=3D"692de8f22248c05074044313"
+style=3D"width:138px;vertical-align:middle;">
+<table id=3D"692de8f22248c05074044320" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"114" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"114" height=3D"64"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/692dea9c5625429668e11819"
+style=3D"max-width:114px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:11=
+4px;">
+</td></tr></table>
+</td></tr></table>
+</td><td id=3D"692de8f22248c05074044316"
+style=3D"width:138px;vertical-align:middle;">
+<table id=3D"692de8f22248c05074044323" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"114" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"114" height=3D"64"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/692dea985625429668e11815"
+style=3D"max-width:114px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:11=
+4px;">
+</td></tr></table>
+</td></tr></table>
+</td><td id=3D"692de8f22248c05074044319"
+style=3D"width:138px;vertical-align:middle;">
+<table id=3D"692de8f22248c05074044326" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"114" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"114" height=3D"64"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/692dea946fd6ae24b26b760b"
+style=3D"max-width:114px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:11=
+4px;">
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"623d90bc601f4cf74d29e279" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td class=3D"padding-left padding-right" background=3D""
+style=3D"padding-bottom:6px;padding-left:24px;padding-right:24px;padding-to=
+p:6px;background-color:#082861;background-position:unset;background-repeat:=
+no-repeat;background-size:cover;">
+<table id=3D"623d90bc601f4cf74d29e27a" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;"><tr><td id=3D"623d90bc601f4cf74d29e27b" class=3D"mobi=
+le-container"
+style=3D"width:552px;vertical-align:top;">
+<table id=3D"692449b5557d9599fd7fc4c3" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"692449b55=
+57d9599fd7fc4c3" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4547?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"191"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/62a9ad04d6a40f001de2bb21"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"627a3ae2e512de21eaa46d46" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"627a3ae2e=
+512de21eaa46d46" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4548?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"191"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/6283ebf0cbd80f001d2fb68a"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"692440052e64223ef47858db" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"692440052=
+e64223ef47858db" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f4549?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"264"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/692440402cb3ce44cb8a3465"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"692441169594a4b1fd38cf1d" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"692441169=
+594a4b1fd38cf1d" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f454a?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"264"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/6924413116173dd430ee116a"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"627a3a7b05ecdc69a9a75bc2" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"627a3a7b0=
+5ecdc69a9a75bc2" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f454b?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"264"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/65eecb18beacfb1cdbd2a1ae"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"617907d759b3af4e5159b634" role=3D"presentation" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td class=3D"padding-left padding-right padding-top padding-=
+bottom" background=3D""
+style=3D"padding-bottom:24px;padding-left:24px;padding-right:24px;padding-t=
+op:24px;background-color:#082861;background-position:unset;background-repea=
+t:no-repeat;background-size:cover;">
+<table id=3D"617907d759b3af4e5159b635" role=3D"presentation" background=3D"=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"
+style=3D""><tr><td>
+<table role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0" width=3D"100%"
+style=3D"width:100%;"><tr><td id=3D"617907d759b3af4e5159b636" class=3D"mobi=
+le-container"
+style=3D"width:552px;vertical-align:top;">
+<table id=3D"63441c3897a77d502675594c" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"63441c389=
+7a77d502675594c" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f454c?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"132"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/69244245aba9560c3ba6b795"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"692443c137d0606e42bcc734" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"692443c13=
+7d0606e42bcc734" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f454d?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"84"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/692443f0aba9560c3ba6b7e7"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"692443ff20fde93954124455" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"692443ff2=
+0fde93954124455" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f454e?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"141"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/6539343d377a9940114b188d"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"6924416bc92e694a2d8a611b" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"528" align=3D"center" class=3D"mobile-table"><tr><td
+style=3D"padding:12px;" align=3D"center">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center"
+style=3D"width:100%;"><tr><td
+style=3D"text-align:center;"><a target=3D"_blank" data-link-id=3D"6924416bc=
+92e694a2d8a611b" href=3D"https://vzxv.omnicamp1.com/ce/c/5e1702fdab6171537e=
+329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431b3312f454f?signature=3D554ede=
+87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77edc821835f773"><img alt=3D""
+                                 class=3D"mobile-image centered-block"
+                                    width=3D"528" height=3D"188"
+                                 border=3D"0"
+                                 src=3D"https://nmr.soundestlink.com/image/=
+newsletter/692441b8aba9560c3ba6b768"
+style=3D"max-width:528px;height:auto;margin:0 0;vertical-align:middle;color=
+:#000000;font-family:Arial,sans-serif;font-size:12px;line-height:1;width:52=
+8px;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"62162ce6fcf43715207c0d9f" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"><tr><td align=3D"left"
+style=3D"12px;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tr><td
+style=3D"padding:12px;"> <a target=3D"_blank" href=3D"https://vzxv.omnicamp=
+1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431=
+b3312f4550?signature=3D554ede87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77e=
+dc821835f773"> <img width=3D"24" height=3D"24" alt=3D"facebook" border=3D"0=
+" src=3D"https://nmr.soundestlink.com/dynamicImage/social/facebook/48/24/de=
+fault"
+style=3D"width:24px;height:auto;display:block;margin:0 auto;color:#000000;f=
+ont-family:Arial,sans-serif;font-size:12px;line-height:1;"></a>
+</td><td
+style=3D"padding:12px;"> <a target=3D"_blank" href=3D"https://vzxv.omnicamp=
+1.com/ce/c/5e1702fdab6171537e329fac/6a4e1411037509534c3ed43b/6a51df6c1f7431=
+b3312f4551?signature=3D554ede87057ea4c4d08ffb4872a7b3494f851a0f76ea9207b77e=
+dc821835f773"> <img width=3D"24" height=3D"24" alt=3D"instagram" border=3D"=
+0" src=3D"https://nmr.soundestlink.com/dynamicImage/social/instagram/48/24/=
+default"
+style=3D"width:24px;height:auto;display:block;margin:0 auto;color:#000000;f=
+ont-family:Arial,sans-serif;font-size:12px;line-height:1;"></a>
+</td><td
+style=3D"padding:12px;"> <img width=3D"24" height=3D"24" alt=3D"website_lin=
+k" border=3D"0" src=3D"https://nmr.soundestlink.com/dynamicImage/social/web=
+site_link/48/24/default"
+style=3D"width:24px;height:auto;display:block;margin:0 auto;color:#000000;f=
+ont-family:Arial,sans-serif;font-size:12px;line-height:1;">
+</td><td
+style=3D"padding:12px;"> <a target=3D"_blank" href=3D"mailto:sales@exclusiv=
+ebrandsonline.co.za"> <img width=3D"24" height=3D"24" alt=3D"email" border=
+=3D"0" src=3D"https://nmr.soundestlink.com/dynamicImage/social/email/48/24/=
+default"
+style=3D"width:24px;height:auto;display:block;margin:0 auto;color:#000000;f=
+ont-family:Arial,sans-serif;font-size:12px;line-height:1;"></a>
+</td></tr></table>
+</td></tr></table>
+<table id=3D"617907ec59b3af4e5159b638" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding:12px;" bgcolor=3D"" class=3D"mobile-=
+table"><p
+style=3D"margin:0px;text-align:left;">Copyright =C2=A9 Exclusive Brands Onl=
+ine - iGlide</p>
+</td></tr></table>
+<table id=3D"617907de59b3af4e5159b637" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding:12px;" bgcolor=3D"" class=3D"mobile-=
+table"><p
+style=3D"margin:0px;text-align:left;">153 Grant St, Pretoria, South Africa,=
+ 0186<br id=3D"isPasted"><br>Feel like changing the way you receive emails?=
+</p>
+</td></tr></table>
+<table id=3D"617907ef59b3af4e5159b639" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"100%"
+style=3D"overflow-wrap:anywhere;word-wrap:anywhere"><tr><td align=3D""
+style=3D"color:#FFFFFF;font-family:Arial,sans-serif;font-size:12px;line-hei=
+ght:1;mso-line-height-alt:100%;padding:12px;" bgcolor=3D"" class=3D"mobile-=
+table"><p
+style=3D"margin:0px;text-align:left;"><a
+style=3D"color:#FFFFFF" href=3D"https://nmr.soundestlink.com/contactsPrefer=
+ences/v2/?b=3D5d2d808c8653ed3ed5358e58&c=3D5e1702fdab6171537e329fac&payload=
+=3Ds4djecoY40uvVPNMJj05t093E9yQfG3u1NKcDBMvCbVngKxzldLJiWiUrXOQdC1YBq-Wkz8j=
+ZX_kf2Ppz_8-UQbLqhWsboNuGYR8N1wtRlmaTWoRz7o_L1kR26KUHF87JNpv" target=3D"_bl=
+ank">Update preferences</a> or <a
+style=3D"color:#FFFFFF" href=3D"https://nmr.soundestlink.com/contactsPrefer=
+ences/v2/unsubscribe/?b=3D5d2d808c8653ed3ed5358e58&c=3D5e1702fdab6171537e32=
+9fac&payload=3Dny_zeDNYThcRjXGJSDfw-akEo4ycZ-NAAHc0lz_0NKnbE7wKCXSYxflrN7Sk=
+ugbSFaL0apWOUhmcSAtGQ61sgWsgYHPgF43s7irTYsHOAUiTFQ-bzzoUwDaYBxyeyhZlQB3K" t=
+arget=3D"_blank">Unsubscribe</a></p>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>
+</body>
+</html>
+
+--da36834e822445967da04f28ee5df8b147d87b0d4de6f05877c7d1289e85--
